@@ -1,0 +1,138 @@
+/* Estilos gerais */
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid #ffd700; /* Adiciona uma linha dourada abaixo do cabeçalho */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Estilos para as seções */
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Estilos dos quadrados dos funcionários */
+
+.quadro {
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 30px; /* Aumenta o espaço entre os quadros */
+    position: relative;
+}
+
+.quadro img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+}
+
+/* Estilos das informações dos funcionários */
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Adiciona uma barra vertical cinza entre os funcionários */
+.quadro:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px; /* Ajusta a posição da barra */
+    transform: translateY(-50%);
+    height: 100px;
+    width: 2px;
+    background-color: #221f1f;
+}
+
+/* Estilos dos botões */
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #121212;
+    color: #ffffff;
+    border: 2px solid #000;
+}
+
+button:active {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000;
+}
+
+.btn-email,
+.btn-telefone,
+.btn-whatsapp {
+    width: 150px;
+}
+
+/* Estilos do rodapé */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    clear: both;
+    border-top: 2px solid #ffd700;
+}

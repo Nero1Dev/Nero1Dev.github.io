@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dalmasso Contabilidade</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Dalmasso Contabilidade</h1>
+            <button class="menu-btn" onclick="toggleNav()">☰ Menu</button>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos a Dalmasso Contabilidade, oferecendo soluções contábeis confiáveis para o seu negócio.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <p>Oferecemos serviços contábeis personalizados para atender às necessidades da sua empresa.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para saber como podemos ajudar o seu negócio.</p>
+        <button class="btn-email" onclick="location.href='mailto:dalmassocontabilidade@gmail.com';">Email</button>
+        <button class="btn-telefone" onclick="location.href='tel:+556635664275';">Telefone</button>
+        <button class="btn-whatsapp" onclick="location.href='https://api.whatsapp.com/send?phone=+556635664275';">WhatsApp</button>
+    </section>
+
+    <section id="equipe">
+        <h2>Nossa Equipe</h2>
+
+        <div class="quadro">
+            <img src="./Assets/icons/nairon.jpeg" alt="Funcionário 1">
+            <div class="info">
+                <p>Nairon Dalmaso</p>
+                <p>Auxilia/Dev</p>
+            </div>
+        </div>
+
+        <!-- Repita este bloco para cada funcionário -->
+        
+        <div class="quadro">
+            <img src="./Assets/icons/ellen.jpeg" alt="Funcionário 2">
+            <div class="info">
+                <p>Ellen Eduarda</p>
+                <p>Constituição</p>
+            </div>
+        </div>
+
+        <div class="quadro">
+            <img src="./Assets/icons/dalmasso.jpeg" alt="Funcionário 3">
+            <div class="info">
+                <p>Ademir Dalmaso</p>
+                <p>Gerente/Contador</p>
+            </div>
+        </div>
+
+        <div class="quadro">
+            <img src="./Assets/icons/carlos.jpeg" alt="Funcionário 4">
+            <div class="info">
+                <p>Carlos José</p>
+                <p>Rural/Fiscal</p>
+            </div>
+        </div>
+
+        <div class="quadro">
+            <img src="./Assets/icons/karla.jpeg" alt="Funcionário 5">
+            <div class="info">
+                <p>Karla Medeiros</p>
+                <p>Fiscal</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dalmasso Contabilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
